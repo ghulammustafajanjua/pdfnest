@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>JanjuaPDF - Free Online PDF Tools</title>
-<meta name="description" content="Free online PDF tools: merge, split, rotate, watermark, add page numbers, convert images to PDF and PDF to JPG. Files never leave your device.">
+<title>PDF to JPG Converter - Save PDF Pages as Images | JanjuaPDF</title>
+<meta name="description" content="Convert PDF pages to JPG images online for free. Download every page as a picture in a ZIP. No signup, runs in your browser.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JanjuaPDF">
-<meta property="og:title" content="JanjuaPDF - Free Online PDF Tools">
-<meta property="og:description" content="Merge, split, rotate, watermark and convert PDFs free. No signup, files never leave your device.">
-<meta property="og:url" content="https://janjuapdf.com/">
+<meta property="og:title" content="PDF to JPG Converter - Save PDF Pages as Images | JanjuaPDF">
+<meta property="og:description" content="Convert PDF pages to JPG images online for free. Download every page as a picture in a ZIP. No signup, runs in your browser.">
+<meta property="og:url" content="https://janjuapdf.com/pdf-to-jpg">
 <meta property="og:image" content="https://janjuapdf.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://janjuapdf.com/og-image.png">
-<link rel="canonical" href="https://janjuapdf.com/">
+<link rel="canonical" href="https://janjuapdf.com/pdf-to-jpg">
 <style>
 :root{--bg:#f6f7fb;--card:#fff;--ink:#1d2433;--mute:#667085;--brand:#e5322d;--brand2:#c42a26;--line:#e4e7ee;--ok:#12805c}
 *{box-sizing:border-box}
@@ -35,7 +35,7 @@ header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0
 .tool h3{margin:8px 0 4px;font-size:17px}
 .tool p{margin:0;color:var(--mute);font-size:14px}
 .panel{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin:24px 0}
-.panel h2{margin:0 0 4px}
+.panel h2,.panel h1{margin:0 0 4px}.panel h1{font-size:28px}
 .panel .sub{color:var(--mute);margin:0 0 16px}
 .back{background:none;border:0;color:var(--brand);cursor:pointer;font-size:14px;padding:0;margin-bottom:10px}
 .drop{border:2px dashed #c7cdda;border-radius:12px;padding:30px;text-align:center;background:#fafbff;cursor:pointer}
@@ -63,20 +63,20 @@ input[type=text],input[type=number],select{width:100%;padding:9px;border:1px sol
 .seo h2{color:var(--ink);font-size:18px}
 footer{padding:22px 0;text-align:center;color:var(--mute);font-size:13px}
 .hide{display:none}
-</style>
+.seo h3{font-size:16px;margin:16px 0 2px;color:var(--ink)}.seo ol{padding-left:20px}.more a{display:inline-block;margin:4px 14px 4px 0;color:var(--brand);text-decoration:none;font-weight:600}</style>
 </head>
 <body>
-<header><div class="wrap nav"><div class="logo" onclick="showHome()">Janjua<span>PDF</span></div><div style="color:var(--mute);font-size:14px">100% Free &bull; No signup</div></div></header>
+<header><div class="wrap nav"><a class="logo" href="/" style="text-decoration:none">Janjua<span>PDF</span></a><div style="color:var(--mute);font-size:14px">100% Free &bull; No signup</div></div></header>
 
 <main class="wrap">
-<section id="home">
-  <div class="hero"><h1>Every PDF tool you need, free</h1><p>Merge, split, rotate, watermark and convert PDFs right in your browser. Your files never leave your device.</p></div>
+<section id="home" class="hide">
+  <div class="hero"><div></div><p>Merge, split, rotate, watermark and convert PDFs right in your browser. Your files never leave your device.</p></div>
   <div class="grid" id="grid"></div>
 </section>
-<section id="toolview" class="hide">
+<section id="toolview">
   <div class="panel">
-    <button class="back" onclick="showHome()">&larr; All tools</button>
-    <h2 id="tt"></h2><p class="sub" id="td"></p>
+    <a class="back" href="/" style="text-decoration:none;display:inline-block">&larr; All tools</a>
+    <h1 id="tt"></h1><p class="sub" id="td"></p>
     <div class="drop" id="drop"><b>Click to choose files</b> or drag &amp; drop here<br><small id="acceptNote" style="color:var(--mute)"></small></div>
     <input type="file" id="fi" class="hide" multiple>
     <ul class="files" id="flist"></ul>
@@ -90,8 +90,12 @@ footer{padding:22px 0;text-align:center;color:var(--mute);font-size:13px}
 </main>
 
 <section class="seo"><div class="wrap">
-<h2>About JanjuaPDF</h2>
-<p>JanjuaPDF offers free online PDF tools that run directly in your browser. You can merge several PDFs into one, split a document into pages, rotate pages, add a text watermark, number your pages, turn images into a PDF, or export each PDF page as a JPG image. No signup, no watermark from us, no upload.</p>
+<h2>How to use PDF to JPG</h2>
+<ol><li>Choose the PDF file.</li><li>Pick the quality: Standard, High or Small file.</li><li>Press Run to get a ZIP with one JPG per page, and small previews you can check.</li></ol>
+<h2>Frequently asked questions</h2>
+<h3>Do I get one image per page?</h3><p>Yes. Each PDF page becomes its own JPG, and all images are packed into one ZIP.</p><h3>Which quality should I pick?</h3><p>Standard is good for most uses. Choose High for sharper text, or Small file to save space.</p><h3>Is my PDF uploaded?</h3><p>No. Everything runs inside your browser.</p>
+<h2>More free PDF tools</h2>
+<p class="more"><a href="/merge-pdf">Merge PDF</a><a href="/split-pdf">Split PDF</a><a href="/rotate-pdf">Rotate PDF</a><a href="/jpg-to-pdf">JPG to PDF</a><a href="/watermark-pdf">Add Watermark to PDF</a><a href="/add-page-numbers-to-pdf">Add Page Numbers to PDF</a></p>
 </div></section>
 <footer>&copy; <span id="yr"></span> JanjuaPDF &middot; Free PDF tools<br><a href="/about" style="color:inherit">About</a> &middot; <a href="/privacy" style="color:inherit">Privacy Policy</a> &middot; <a href="/contact" style="color:inherit">Contact</a></footer>
 
@@ -135,7 +139,7 @@ numbers:['#d6336c','<path d="M5 3h9l5 5v13H5z"/><path d="M14 3v5h5"/><path d="M9
 };
 $('grid').innerHTML=tools.map(t=>`<a class="tool" href="/${SLUG[t.id]}"><div class="ic" style="background:${thumbs[t.id][0]}"><svg viewBox="0 0 24 24">${thumbs[t.id][1]}</svg></div><h3>${t.t}</h3><p>${t.d}</p></a>`).join('');
 
-function showHome(){$('home').classList.remove('hide');$('toolview').classList.add('hide');cur=null;files=[];window.scrollTo(0,0);}
+function showHome(){location.href='/';return;$('home').classList.remove('hide');$('toolview').classList.add('hide');cur=null;files=[];window.scrollTo(0,0);}
 function openTool(id){
   cur=tools.find(t=>t.id===id);files=[];
   $('home').classList.add('hide');$('toolview').classList.remove('hide');
@@ -307,6 +311,8 @@ $('go').onclick=async()=>{
     setStatus('Error: '+m,'err');}
   $('go').disabled=files.length<cur.min;
 };
+
+openTool('pdf2jpg');
 </script>
 </body>
 </html>
