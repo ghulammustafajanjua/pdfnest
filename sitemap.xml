@@ -6,4 +6,19 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://janjuapdf.com/about.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://janjuapdf.com/privacy.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://janjuapdf.com/contact.html</loc>
+    <lastmod>2026-10-08</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>
