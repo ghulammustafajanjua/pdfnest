@@ -3,18 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Split PDF Online Free - Extract Pages | JanjuaPDF</title>
-<meta name="description" content="Split a PDF online for free. Save every page as its own file or extract the page range you need. Works in your browser, no upload.">
+<title>PDF to Text Converter - Extract Text from PDF Free | JanjuaPDF</title>
+<meta name="description" content="Extract text from a PDF online for free and save it as a TXT file. No signup, runs in your browser, your file is not uploaded.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="JanjuaPDF">
-<meta property="og:title" content="Split PDF Online Free - Extract Pages | JanjuaPDF">
-<meta property="og:description" content="Split a PDF online for free. Save every page as its own file or extract the page range you need. Works in your browser, no upload.">
-<meta property="og:url" content="https://janjuapdf.com/split-pdf">
+<meta property="og:title" content="PDF to Text Converter - Extract Text from PDF Free | JanjuaPDF">
+<meta property="og:description" content="Extract text from a PDF online for free and save it as a TXT file. No signup, runs in your browser, your file is not uploaded.">
+<meta property="og:url" content="https://janjuapdf.com/pdf-to-text">
 <meta property="og:image" content="https://janjuapdf.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://janjuapdf.com/og-image.png">
-<link rel="canonical" href="https://janjuapdf.com/split-pdf">
+<link rel="canonical" href="https://janjuapdf.com/pdf-to-text">
 <style>
 :root{--bg:#f6f7fb;--card:#fff;--ink:#1d2433;--mute:#667085;--brand:#e5322d;--brand2:#c42a26;--line:#e4e7ee;--ok:#12805c}
 *{box-sizing:border-box}
@@ -77,7 +77,7 @@ footer{padding:22px 0;text-align:center;color:var(--mute);font-size:13px}
 <section id="toolview">
   <div class="panel">
     <a class="back" href="/" style="text-decoration:none;display:inline-block">&larr; All tools</a>
-    <h1 id="tt">Split PDF</h1><p class="sub" id="td">Extract pages or split every page into its own file.</p>
+    <h1 id="tt">PDF to Text</h1><p class="sub" id="td">Extract the text from a PDF and save it as a TXT file.</p>
     <div class="drop" id="drop"><b>Click to choose files</b> or drag &amp; drop here<br><small id="acceptNote" style="color:var(--mute)"></small></div>
     <input type="file" id="fi" class="hide" multiple>
     <ul class="files" id="flist"></ul>
@@ -91,12 +91,12 @@ footer{padding:22px 0;text-align:center;color:var(--mute);font-size:13px}
 </main>
 
 <section class="seo"><div class="wrap">
-<h2>How to use Split PDF</h2>
-<ol><li>Choose the PDF you want to split.</li><li>Pick a mode: every page as a separate PDF (downloaded as a ZIP), or one PDF made from a page range such as 1-3,5.</li><li>Press Run and download the result.</li></ol>
+<h2>How to use PDF to Text</h2>
+<ol><li>Choose the PDF file.</li><li>Press Run. The text is read page by page.</li><li>Download the TXT file, or check the preview shown below the button.</li></ol>
 <h2>Frequently asked questions</h2>
-<h3>How do I extract only some pages?</h3><p>Choose the range mode and type the pages, for example 1-3,5,8-10. You will get one new PDF with just those pages.</p><h3>What does the ZIP contain?</h3><p>One PDF per page of your original document.</p><h3>Is my document uploaded?</h3><p>No. Splitting runs in your browser and your file stays on your device.</p>
+<h3>Why do I get no text?</h3><p>Scanned PDFs are pictures of pages, so they contain no selectable text. This tool reads text that is already inside the PDF and cannot do OCR.</p><h3>Is the layout kept?</h3><p>The text order is kept page by page, but columns and tables may not look exactly like the original.</p><h3>Is my PDF uploaded?</h3><p>No. The text is extracted in your browser.</p>
 <h2>More free PDF tools</h2>
-<p class="more"><a href="/merge-pdf">Merge PDF</a><a href="/rotate-pdf">Rotate PDF</a><a href="/jpg-to-pdf">JPG to PDF</a><a href="/pdf-to-jpg">PDF to JPG</a><a href="/watermark-pdf">Add Watermark to PDF</a><a href="/add-page-numbers-to-pdf">Add Page Numbers to PDF</a><a href="/delete-pdf-pages">Delete PDF Pages</a><a href="/reorder-pdf-pages">Reorder PDF Pages</a><a href="/pdf-to-text">PDF to Text</a><a href="/pdf-to-png">PDF to PNG</a></p>
+<p class="more"><a href="/merge-pdf">Merge PDF</a><a href="/split-pdf">Split PDF</a><a href="/rotate-pdf">Rotate PDF</a><a href="/jpg-to-pdf">JPG to PDF</a><a href="/pdf-to-jpg">PDF to JPG</a><a href="/watermark-pdf">Add Watermark to PDF</a><a href="/add-page-numbers-to-pdf">Add Page Numbers to PDF</a><a href="/delete-pdf-pages">Delete PDF Pages</a><a href="/reorder-pdf-pages">Reorder PDF Pages</a><a href="/pdf-to-png">PDF to PNG</a></p>
 </div></section>
 <footer>&copy; <span id="yr">2026</span> JanjuaPDF &middot; Free PDF tools<br><a href="/about" style="color:inherit">About</a> &middot; <a href="/privacy" style="color:inherit">Privacy Policy</a> &middot; <a href="/contact" style="color:inherit">Contact</a></footer>
 
@@ -377,7 +377,7 @@ $('go').onclick=async()=>{
   $('go').disabled=files.length<cur.min;
 };
 
-openTool('split');
+openTool('pdf2text');
 </script>
 </body>
 </html>
